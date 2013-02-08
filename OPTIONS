@@ -8,6 +8,9 @@ ENABLED='no'
 # the connection between PHP and the MySQL server.
 INSTALL_MYSQL='no'
 
+# Install Memcached Server (yes/no)?
+INSTALL_MEMCACHED='no'
+
 # Install Postfix (yes/no)?
 # Postfix will be installed as a null (send-only) client. It will not receive
 # any emails.

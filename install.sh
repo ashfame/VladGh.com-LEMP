@@ -41,6 +41,7 @@ if [[ $PHP_VERSION != 5.4* ]]; then
   echo "  - Suhosin ${SUHOSIN_VERSION};" >&3
 fi
 [ $INSTALL_MYSQL == 'yes' ] && echo "  - MySQL (packaged version);" >&3
+[ $INSTALL_MEMCACHED == 'yes' ] && echo "  - Memcached (packaged version);" >&3
 [ $INSTALL_POSTFIX == 'yes' ] && echo "  - Postfix (packaged version);" >&3
 echo '===============================================================================' >&3
 echo 'For more information please visit:' >&3
@@ -49,6 +50,7 @@ echo '==========================================================================
 
 prepare_system
 [ $INSTALL_MYSQL == 'yes' ] && install_mysql
+[ $INSTALL_MEMCACHED == 'yes' ] && install_memcached
 install_php
 install_apc
 
